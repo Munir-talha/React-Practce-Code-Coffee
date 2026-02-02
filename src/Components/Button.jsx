@@ -5,8 +5,7 @@ function Button(props) {
   const inc = () => { 
     setCount((prevValue)=>
     {
-      console.log(prevValue)
-      prevValue.countValue = prevValue.countValue + 1
+      return prevValue = {...prevValue,countValue : prevValue.countValue + 1}
     }
   )
    }
@@ -16,8 +15,7 @@ function Button(props) {
   return (
     <>
     <button onClick={inc}>+</button>
-    {/* {count.countValue}-{count.color} */}
-    {count.countValue}
+    {count.countValue}-{count.color}
     <button onClick={dec}>-</button>
     </>
   )
