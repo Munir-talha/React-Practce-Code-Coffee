@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Card({name , role , Experience}) {
+function Card(props) {
   return (
     <div>
-      {name} {role} {Experience}
+      <h1>Hello world {props.name} , my age {props.age}</h1>
     </div>
   )
 }
