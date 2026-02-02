@@ -8,9 +8,7 @@ function App() {
 
   return (
     <>
-      <Button name="Click Here!"/>
-      <Button/>
-      <Card name="Talha" role="Software Developer" Experience="3yrs"/>
+    <Button/>
     </>
   )
 }

@@ -1,11 +1,25 @@
-import React from 'react'
+import React , {useState} from 'react'
 
-function Button({props}) {
-    console.log(props)
+function Button(props) {
+  const [count , setCount] = useState({countValue : 5 , color:'white'})
+  const inc = () => { 
+    setCount((prevValue)=>
+    {
+      console.log(prevValue)
+      prevValue.countValue = prevValue.countValue + 1
+    }
+  )
+   }
+   const dec = () =>{
+    setCount((prevValue)=>prevValue.countValue - 1)
+   }
   return (
-    <div style={{backgroundColor:'black' , color:'white', padding:'20px', border:'1px solid white'}}>
-      <span>{props.name}</span>
-    </div>
+    <>
+    <button onClick={inc}>+</button>
+    {/* {count.countValue}-{count.color} */}
+    {count.countValue}
+    <button onClick={dec}>-</button>
+    </>
   )
 }
 
