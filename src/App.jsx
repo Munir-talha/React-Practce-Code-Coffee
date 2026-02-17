@@ -7,6 +7,7 @@ import ConditionalRendering from './Components/ConditionalRendering'
 import MyForm from './Components/MyForm'
 import Todo from './Components/Todo'
 import FetchApi from './Components/FetchApi'
+import ReactUseEffect from './Components/ReactUseEffect'
 
 function App() {
   const [count, setCount] = useState({name:'talha' , desig:'CS'})
@@ -16,6 +17,7 @@ function App() {
     {/* <button onClick={()=>setKill(!kill)}>Kill</button>
     {kill ? <FetchApi/> : null} */}
     <FetchApi/>
+    {/* <ReactUseEffect/> */}
     {/* <Todo/> */}
     {/* <MyForm/> */}
     {/* <ConditionalRendering/> */}

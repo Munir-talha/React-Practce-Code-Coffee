@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 function FetchApi() {
   const [isRender , setRender] = useState(true)
   const [count , setCount] = useState(0)
-  const [payload , setPayload] = useState("albumss")
+  const [payload , setPayload] = useState("albums")
   const [data , setData] = useState([])
     // useEffect(()=>{
     //   //Mounting Phase
