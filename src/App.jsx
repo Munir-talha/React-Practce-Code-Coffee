@@ -9,13 +9,15 @@ import Todo from './Components/Todo'
 import FetchApi from './Components/FetchApi'
 import ReactUseEffect from './Components/ReactUseEffect'
 import UseReference from './Components/UseReference'
+import UseMemo from './Components/UseMemo'
 
 function App() {
   const [count, setCount] = useState({name:'talha' , desig:'CS'})
   const [kill , setKill] = useState('true')
   return (
     <>
-    <UseReference/>
+    <UseMemo/>
+    {/* <UseReference/> */}
     {/* <button onClick={()=>setKill(!kill)}>Kill</button>
     {kill ? <FetchApi/> : null} */}
     {/* <FetchApi/> */}
