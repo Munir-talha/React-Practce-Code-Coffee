@@ -12,22 +12,22 @@ import UseReference from './Components/UseReference'
 import UseMemo from './Components/UseMemo'
 
 function App() {
-  const [count, setCount] = useState({name:'talha' , desig:'CS'})
-  const [kill , setKill] = useState('true')
+  const [count, setCount] = useState({ name: 'talha', desig: 'CS' })
+  const [kill, setKill] = useState('true')
   return (
     <>
-    <UseMemo/>
-    {/* <UseReference/> */}
-    {/* <button onClick={()=>setKill(!kill)}>Kill</button>
+      {/* <UseMemo/> */}
+      {/* <UseReference/> */}
+      {/* <button onClick={()=>setKill(!kill)}>Kill</button>
     {kill ? <FetchApi/> : null} */}
-    {/* <FetchApi/> */}
-    {/* <ReactUseEffect/> */}
-    {/* <Todo/> */}
-    {/* <MyForm/> */}
-    {/* <ConditionalRendering/> */}
-    {/* <Form/> */}
+      {/* <FetchApi/> */}
+      {/* <ReactUseEffect/> */}
+      {/* <Todo/> */}
+      <MyForm />
+      {/* <ConditionalRendering/> */}
+      {/* <Form/> */}
       {/* <Button/> */}
-      
+
     </>
   )
 }
