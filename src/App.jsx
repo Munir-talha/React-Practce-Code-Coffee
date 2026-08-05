@@ -10,6 +10,7 @@ import FetchApi from './Components/FetchApi'
 import ReactUseEffect from './Components/ReactUseEffect'
 import UseReference from './Components/UseReference'
 import UseMemo from './Components/UseMemo'
+import BudgetTracker from './Components/BudgetTracker'
 
 function App() {
   const [count, setCount] = useState({ name: 'talha', desig: 'CS' })
@@ -23,7 +24,8 @@ function App() {
       {/* <FetchApi/> */}
       {/* <ReactUseEffect/> */}
       {/* <Todo/> */}
-      <MyForm />
+      {/* <MyForm /> */}
+      <BudgetTracker />
       {/* <ConditionalRendering/> */}
       {/* <Form/> */}
       {/* <Button/> */}
